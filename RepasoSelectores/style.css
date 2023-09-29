@@ -1,0 +1,65 @@
+html{
+    background-color: black;
+}
+
+/*SELECTOR DE ELEMENTO (SIRVE PARA CAMBIOS GLOBALES)*/
+h1{
+    color: green;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/* SELECTOR DE CLASE */
+.selectorClase{
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5rem;
+}
+/* SELECTOR ID */
+#selectorID{
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+}
+
+/*SELECTOR DE ATRIBUTO */
+[src="../proyecto inicio/img/Logo-Adecco.png"]{
+    margin: 50px;
+}
+
+/* SELECTOR CADENA DESCENDIENTE */
+.selectorCadena h4{
+    color: pink;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+}
+/* SELECTOR DE TODOS LOS HIJOS */
+.selectorHijos >h5{
+color: yellow;
+text-transform: uppercase;
+text-align: center;
+font-size: 4rem;
+}
+/* SELECTOR MULTIPLE */
+.selectorMultiple h3, .selectorMultiple h6{
+    color: purple;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.ejerciciodiv{
+    height: 300px;
+    background-color: yellow;
+}
+
+.contenedor{
+    height: 100px;
+    background-color: blue;
+    max-width: 90%;
+    margin: 0 auto;
+}

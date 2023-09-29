@@ -1,0 +1,90 @@
+.selectorCadenaDescendente h2{
+background-color: blue;
+height: 100px;
+}
+
+.selectorTodosLosHijos>div>h2{
+    background-color: blue;
+    height: 100px;
+}
+
+.seccionMargin, .seccionPadding{
+background-color: yellow;
+height: 200px;
+}
+
+.seccionMargin{
+    margin: 50px;
+}
+
+.seccionPadding{
+    padding: 50px;
+}
+
+.seccionDisplay>p{
+    background-color: blue;
+}
+.seccionDisplay a{
+    background-color: red;
+}
+.seccionDisplay h1{
+    background-color:yellow;
+}
+.seccionDisplay h3{
+    background-color: purple;
+}
+.seccionDisplay h6{
+    background-color: brown;
+}
+.seccionDisplay div{
+    background-color: grey;
+}
+
+.seccionDisplay2 p{
+    background-color: blue;
+    display: inline;
+}
+.seccionDisplay2 a{
+    background-color: red;
+    display: block;
+}
+.seccionDisplay2 h1{
+    background-color:yellow;
+    display: inline;
+}
+.seccionDisplay2 h3{
+    background-color: purple;
+    display: inline;
+}
+.seccionDisplay2 h6{
+    background-color: brown;
+    display: inline;
+}
+.seccionDisplay2 div{
+    display: inline;
+}
+.seccionDisplay2 div>p{
+    background-color: grey;
+    display: inline;
+}
+
+section{
+    width: 300px;
+    height: 300px;
+    color: white;
+}
+
+.flexRow{
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: green;
+}
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: blue;
+}
