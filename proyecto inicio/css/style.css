@@ -6,12 +6,14 @@
     --fuenteBotones: 'DinBold', sans-serif;
 }
 
-html{
+* {
     box-sizing: border-box;
 
 }
 
-*, *:before, *:after{
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -32,7 +34,7 @@ body {
 /* Estilos genericos */
 
 .contenedor {
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -144,7 +146,7 @@ body {
 }
 
 .botonesCursos [alt="botonMadrid"] {
-   background-color: white;
+    background-color: white;
     color: var(--colorSecundario);
     font-family: var(--fuentePrincipal);
     font-size: 1.4rem;
@@ -157,14 +159,14 @@ body {
     border: 1px solid var(--colorPrincipal);
 }
 
-.cursos{
+.cursos {
     margin-bottom: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.cursos>div{
+.cursos>div {
 
     max-width: 50%;
     flex: 2;
@@ -175,7 +177,7 @@ body {
     min-height: 300px;
 }
 
-.cursos h2{
+.cursos h2 {
 
     color: white;
     font-size: 2.7rem;
@@ -185,7 +187,7 @@ body {
 
 }
 
-.cursos a{
+.cursos a {
     color: var(--colorPrincipal);
     font-size: 1.4rem;
     background-color: white;
@@ -197,7 +199,7 @@ body {
     display: inline-block;
 }
 
-.marketing{
+.marketing {
     background-image: url(../img/Curso-marketing-digital-centro.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -205,7 +207,7 @@ body {
     margin-right: 15px;
 }
 
-.videojuegos{
+.videojuegos {
     background-image: url(../img/Curso-programacion-videojuegos-centro.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -215,11 +217,12 @@ body {
 
 
 /* Estilos Pidenoslo */
-.pidenoslo{
+.pidenoslo {
     margin-bottom: 150px;
 
 }
-.pidenoslo h3{
+
+.pidenoslo h3 {
     text-align: center;
     color: var(--colorSecundario);
     text-transform: uppercase;
@@ -227,13 +230,13 @@ body {
     margin-bottom: 40px 0;
 }
 
-.pidenoslo div{
-display: flex;
-flex-direction: row;
-justify-content: center;
+.pidenoslo div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.pidenoslo a{
+.pidenoslo a {
     background-color: var(--colorPrincipal);
     color: white;
     font-family: var(--fuentePrincipal);
@@ -247,27 +250,187 @@ justify-content: center;
 }
 
 
-.pidenoslo a:hover{
+.pidenoslo a:hover {
     background-color: var(--colorSecundario);
     text-decoration: underline;
 }
-/* Estilos video */
 
-.videoCarrera{
-    display: flex;
+/* Estilos video */
+.video {
     justify-content: center;
-    padding-top: 70px;
+    display: flex;
+    margin-bottom: 70px;
 }
 
 /* Estilos para quien son los cursos */
+.requisitos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 70px;
+}
 
+.infoCursos {
+    padding: 0px 15px 0px 15px;
+}
+
+.infoCursos h3 {
+    font-size: 17px;
+    color: var(--colorPrincipal);
+    margin-bottom: 22px;
+    font-weight: 800;
+}
+
+.infoCursos h4 {
+    font-weight: 800;
+    font-size: 27px;
+    margin-bottom: 22px
+}
+
+.infoCursos p {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.infoCursos h5 {
+    width: 80%;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.preg2 {
+    color: #F76666;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    display: block;
+    text-decoration: underline;
+}
+
+.infoAdjunta p {
+    font-weight: 800;
+    padding-bottom: 25px;
+}
+
+.descargaInfo {
+    float: none;
+    background: #F76666;
+    padding: 20px 40px;
+    border-color: #fff;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    min-height: 50px;
+}
+
+.infoRequisitos img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* Estilos localizaciones */
 .localizaciones {
+    display: flex;
+    justify-content: start;
+    align-items: start;
     background-color: black;
     color: white;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.datosLocalizaciones {
+    width: 25%;
+    margin-left: 8rem;
+    margin-bottom: 3rem;
+    padding: 50px;
+}
+
+.datosLocalizaciones>h2 {
+    height: 7rem;
+}
+
+.datosLocalizaciones>h3 {
+    margin: 0;
+}
+
+.localizaciones>div>p {
+    margin-top: 0;
 }
 
 /* Estilos contactar */
+.contactar {
+    background-color: var(--colorPrincipal);
+    padding: 100px 0px 130px 0px;
+    margin-bottom: 50px;
+}
+
+.contactarTitulos h3 {
+    font-size: 17px;
+    margin-bottom: 22px;    
+    font-weight: 300;
+    color: #f8f9fa;
+    width: 100%;
+}
+
+.contactarTitulos h2 {
+    width: 100%;
+    font-weight: 800;
+    margin: auto;
+    color: #fff;
+}
+
+.seccionCartas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cartaTel, .cartaMail{
+    display: flex;
+    background-color: white;
+    border-radius: 0.55rem;
+    margin-top: 4rem;
+    padding: 20px;
+}
+
+.cartaTel{
+    flex: 1;
+    display: flex;
+    margin-right: 10px;
+}
+
+.cartaMail{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.cartaTel p, .cartaMail p{
+    margin-left: 15px;
+}
+
+.cartaTel a, .cartaMail a{
+    text-decoration: none;
+    color: var(--colorPrincipal);
+    background-color: transparent;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+.cartaMail img, .cartaTel img{
+margin-top: 10px;
+}
+
+.text-card{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 800;
+}
 
 /* Estilos footer */
