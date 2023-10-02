@@ -365,7 +365,6 @@ body {
 .contactar {
     background-color: var(--colorPrincipal);
     padding: 100px 0px 130px 0px;
-    margin-bottom: 50px;
 }
 
 .contactarTitulos h3 {
@@ -398,12 +397,13 @@ body {
 
 .cartaTel{
     flex: 1;
-    display: flex;
+    max-width: 50%;
     margin-right: 10px;
 }
 
 .cartaMail{
     flex: 1;
+    max-width: 50%;
     margin-left: 10px;
 }
 
@@ -434,3 +434,39 @@ margin-top: 10px;
 }
 
 /* Estilos footer */
+footer{
+    padding: 30px;
+    background-color: #f3f3f5;
+}
+
+.footer1{
+    display: flex;
+    padding: 0px 15px 15px 15px;
+}
+.footer1 a{
+    text-decoration: none;
+    margin-right: 70px;
+}
+
+.footer1 h3{
+    text-align: center;
+    margin-bottom: 22px;
+    color: var(--colorSecundario);
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.footer2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #194584 !important;
+    border-bottom: 1px solid #194584 !important
+}
+
+.footer2 a{
+    margin-right: 50px;
+    font-size: 17px;
+    text-decoration: underline
+}
