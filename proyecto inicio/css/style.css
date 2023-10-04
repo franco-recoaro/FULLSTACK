@@ -135,8 +135,20 @@ nav{
     font-weight: 700;
 }
 
+@media (max-width: 768px) {
+    .bannerPrincipal a{
+        padding: 24px 60px;
+    }
+}
+
 .margenDerecho {
     margin-right: 35%;
+}
+
+@media (max-width:1140px) {
+    .margenDerecho{
+        margin-right: 0;
+    }
 }
 
 .tituloPrincipal {
@@ -156,6 +168,9 @@ nav{
     justify-content: space-between;
 }
 
+.flexMain img{
+    margin-right: 10px;
+}
 /* Estilos para la imagen corporativas */
 
 .bannerLogos {
@@ -166,6 +181,36 @@ nav{
     border-radius: 12px;
     background-color: white;
     margin-top: -120px;
+}
+
+@media (max-width: 1140px) and (min-width: 768px) {
+    .bannerLogos{
+        padding: 20px 40px;
+    }
+    .bannerLogos [alt="logos oficiales"]{
+        max-width: 70%;
+    }
+    .bannerLogos [alt="logo adecco"]{
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .bannerLogos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bannerLogos [alt="logos oficiales"]{
+        max-width: 90%;
+        margin: 20px;
+    }
+    .bannerLogos [alt="logo adecco"]{
+        max-width: 90%;
+        margin: 20px;
+    }
+}
 }
 
 .bannerLogos [alt="logo adecco"] {
@@ -230,6 +275,20 @@ nav{
     justify-content: space-between;
 }
 
+@media (max-width:768px) {
+    .cursos{
+        display: flex;
+        flex-direction: column;
+    }
+    .cursos>div{
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        max-width: 100% !important;
+}
+}
+
 .cursos>div {
 
     max-width: 50%;
@@ -237,8 +296,15 @@ nav{
     padding: 40px 60px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     justify-content: space-between;
     min-height: 300px;
+}
+
+@media (max-width:1140px) and (min-width:768px) {
+    .cursos>div{
+        padding: 30px 30px;
+    }
 }
 
 .cursos h2 {
@@ -323,7 +389,17 @@ nav{
 .video {
     justify-content: center;
     display: flex;
-    margin-bottom: 70px;
+ 
+ .infoCursos{
+    padding: 0;
+ }   margin-bottom: 70px;
+}
+
+@media (max-width:768px){
+  .video iframe{
+        width: 100%;
+        height: 200px;
+    }
 }
 
 /* Estilos para quien son los cursos */
@@ -331,6 +407,33 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 70px;
+}
+
+@media (max-width: 768px) {
+    .requisitos{
+        display: flex;
+        flex-direction: column;
+        margin: 0 !important; 
+    }
+   .requisitos .infoCursos{
+        padding: 0;
+    }
+    .requisitos .infoCursos h3{
+        margin: 0;
+    }
+    .requisitos .descargaInfo{
+        padding: 15px 15px !important;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+
+@media (min-width:480px) and (max-width:1140px) {
+    .requisitos .descargaInfo{
+        padding: 15px 15px !important;
+        margin-bottom: 15px;
+        text-align: center;
+    }
 }
 
 .infoCursos {

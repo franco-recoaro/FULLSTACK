@@ -135,36 +135,37 @@ section{
 }
 */
 
-.ejercicio3 {
-    display: flex;
-    border: 2px solid black;
+.mediaQueri{
+    height: 500px;
 }
 
-.div6,
-.div7 {
-    flex: 1;
-    border: 2px solid black;
+@media (min-width:1131px) {
+    .mediaQueri{
+        height: 500px;
+        background-color: brown;
+    }
 }
 
-.div6 {
-    max-width: 40%;
+@media (min-width: 933px) and (max-width:1131px) {
+    .mediaQueri{
+        background-color: yellow;
+    }
 }
 
-.div7 {
-    max-width: 60%;
-    display: flex;
+@media (min-width: 616px) and (max-width:933px) {
+    .mediaQueri{
+        background-color: blue;
+    }
 }
 
-.div7 .parrafo1 {
-    flex: 1;
-    max-width: 30%;
-    border: 2px solid black;
-    margin: 10px;
+@media (min-width: 360px) and (max-width:616px) {
+    .mediaQueri{
+        background-color: red;
+    }
 }
 
-.div7 .parrafo2 {
-    flex: 1;
-    max-width: 70%;
-    border: 2px solid black;
-    margin: 10px;
+@media (max-width:360px) {
+    .mediaQueri{
+        background-color: green;
+    }
 }
