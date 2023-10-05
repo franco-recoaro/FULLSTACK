@@ -133,39 +133,97 @@ section{
 .div5{
     height: 200px;
 }
-*/
 
-.mediaQueri{
+
+.mediaQueri {
     height: 500px;
 }
 
 @media (min-width:1131px) {
-    .mediaQueri{
+    .mediaQueri {
         height: 500px;
         background-color: brown;
     }
 }
 
 @media (min-width: 933px) and (max-width:1131px) {
-    .mediaQueri{
+    .mediaQueri {
         background-color: yellow;
     }
 }
 
 @media (min-width: 616px) and (max-width:933px) {
-    .mediaQueri{
+    .mediaQueri {
         background-color: blue;
     }
 }
 
 @media (min-width: 360px) and (max-width:616px) {
-    .mediaQueri{
+    .mediaQueri {
         background-color: red;
     }
 }
 
 @media (max-width:360px) {
-    .mediaQueri{
+    .mediaQueri {
         background-color: green;
     }
+}
+
+.ejercicioAR {
+    height: 500px;
+    background-color: blue;
+    position: relative;
+    background-image: linear-gradient(30deg, red 50%, blue 100%);
+}
+
+.ejercicioAR div {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    background-color: purple;
+    -webkit-box-shadow: 10px 10px 130px 8px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 130px 8px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 130px 8px rgba(0,0,0,0.75);
+}
+*/
+.ejercicioGrid div{
+border: 1px solid black;
+}
+
+.ejercicioGrid{
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 200px 100px;
+}
+
+.ejercicioGrid2{
+    display: grid;
+    grid-template-columns: 80% 100px;
+    grid-template-rows: 50px 300px 100px 200px;
+}
+
+.ejercicioGrid2 div{
+    border: 1px solid black;
+}
+
+.ejercicioGrid3{
+    display: grid;
+    height: 500px;
+    grid-template-columns: 100fr 300fr 200fr 150fr;
+    grid-template-rows: 5fr 15fr 16fr 7fr;
+}
+
+.ejercicioGrid3 div{
+    border: 1px solid black;
+}
+
+.ejercicioRepeat{
+    display: grid;
+    height: 300px;
+    grid: 2fr 2fr / 1fr 1fr;
+    /*primero fila - despues columna */
+    
 }
